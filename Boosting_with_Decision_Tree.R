@@ -1,4 +1,5 @@
 boosting_trees <- function(train_data, iterations, classifier){
+  #initialise vector of probabilites, applied to the instances in your training set
   d <- matrix(1/nrow(train_data),nrow(train_data)) 
   alphas <- c()
   #weak_learners <- list()
